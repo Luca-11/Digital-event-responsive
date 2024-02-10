@@ -1,0 +1,999 @@
+@font-face {
+  font-family: "QelliaRegular";
+  src: url("../fonts/Qellia/Qellia-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "QelliaBold";
+  src: url("../fonts/Qellia/Qellia-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "QelliaLight";
+  src: url("../fonts/Qellia/Qellia-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "QelliaMedium";
+  src: url("../fonts/Qellia/Qellia-Medium.otf") format("opentype");
+}
+body {
+  color: white;
+  /* font-family: "QelliaRegular"; */
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  margin: 0;
+  font-family: "QelliaRegular";
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+a {
+  color: #c9c9c9;
+}
+p {
+  font-size: 12px;
+  margin: 0;
+  font-family: "Fira Code", monospace;
+}
+h2 {
+  margin: 0;
+  font-family: "QelliaRegular";
+  font-size: 40px;
+}
+h3 {
+  margin: 0;
+  font-family: "QelliaRegular";
+  font-size: 25px;
+}
+
+h4 {
+  margin: 0;
+  font-family: "QelliaMedium";
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  border: 1px solid white;
+}
+
+li {
+  list-style: none;
+}
+
+.container,
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.f-uni,
+.g-1,
+.g-2,
+.g-2-reverse,
+.h,
+.i,
+.i-reverse,
+.j,
+.k,
+.l,
+.m,
+.n,
+.n-reverse,
+.o,
+.p,
+.p-reverse,
+.q,
+.r,
+.s,
+.r-reverse,
+.z,
+.end {
+  padding: 10px 20px;
+}
+
+.main {
+  transition: 0.5s;
+}
+
+.main img {
+  transition: 0.5s;
+  filter: saturate(0);
+}
+
+.main img:hover {
+  transition: 0.5s;
+  filter: saturate(1);
+}
+
+/* -------------------- Section INTRO -------------------- */
+
+.banner img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 0 40px 0 0;
+  border: none;
+}
+
+.center-line {
+  display: flex;
+  gap: 20px;
+}
+
+.line {
+  width: 100%;
+  min-height: 1px;
+  background-color: white;
+  margin: 20px 0;
+  display: block;
+}
+
+/* -------------------- Section A -------------------- */
+
+.container-a {
+  height: auto;
+  display: flex;
+
+  gap: 20px;
+}
+
+.section-a-left {
+  /* height: 100%; */
+  width: 30%;
+}
+
+.section-a-left img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-a-right {
+  /* height: 100%; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-a-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-a-right > div:nth-child(1) {
+  height: 20%;
+}
+
+.section-a-right > div:nth-child(2) {
+  height: auto;
+}
+
+.section-a-right > div:nth-child(3) {
+  height: 62%;
+}
+
+/* -------------------- Divider -------------------- */
+
+.divider {
+  padding: 10px 20px;
+}
+
+.divider img {
+  border: 0px;
+}
+
+/* -------------------- Section C -------------------- */
+.container-c {
+  display: flex;
+  gap: 20px;
+}
+
+.section-c-left {
+  width: 60%;
+}
+
+.section-c-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-c-left img,
+.section-c-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- Section D -------------------- */
+
+.d img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section E -------------------- */
+
+.container-e {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-e-left {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.section-e-right {
+  width: 35%;
+  border: 1px solid white;
+}
+
+.e img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 90%;
+}
+
+.e h3 {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.e .b {
+  padding: 20px 0px;
+}
+
+/* -------------------- Section F -------------------- */
+
+.container-f {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 60svh;
+}
+
+.col-f-left,
+.col-f-right,
+.col-f-center {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  justify-content: start;
+}
+
+.col-f-left img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.col-f-center img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.col-f-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: left;
+}
+
+.f p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* -------------------- Section F-uni -------------------- */
+
+.container-f-uni {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.col-f-uni-left {
+  width: 33%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col-f-uni-center {
+  width: 33%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col-f-uni-right {
+  width: 33%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.f-uni img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- Section F v2 -------------------- */
+
+.f-v2 {
+  padding: 10px 20px;
+}
+
+.container-f-v2 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.col-f-left-v2 {
+  width: 33%;
+  min-height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.col-f-center-v2 {
+  width: 33%;
+  min-height: 100%;
+}
+
+.col-f-right-v2 {
+  width: 33%;
+  min-height: 100%;
+}
+
+.f-v2 img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section G-1 -------------------- */
+
+.section-g1 {
+  display: flex;
+  gap: 20px;
+}
+
+.section-g1-center {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  gap: 20px;
+}
+
+.section-g1-center > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-g1-center img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.g1-img {
+  width: 33%;
+}
+
+.g1-img-none {
+  display: block;
+  width: 33%;
+}
+
+/* -------------------- Section G-2 -------------------- */
+
+.end p {
+  padding: 10px 20px;
+}
+
+.section-g2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.section-g2-left {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-g2-right {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-g2-center {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-g2 img {
+  width: 100%;
+}
+/* -------------------- Section G-2 reverse -------------------- */
+
+.section-g2-reverse {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.section-g2-reverse-left,
+.section-g2-reverse-center,
+.section-g2-reverse-right {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.section-g2-reverse img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+/* -------------------- Section H -------------------- */
+
+.h img,
+.h video {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section I -------------------- */
+
+.container-i {
+  display: flex;
+  gap: 20px;
+}
+
+.section-i-left {
+  width: 70%;
+  min-height: 100%;
+}
+
+.section-i-right {
+  width: 30%;
+  min-height: 100%;
+}
+
+.i img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- Section I Reverse -------------------- */
+
+.container-i-reverse {
+  display: flex;
+  gap: 20px;
+}
+
+.section-i-left-reverse {
+  width: 30%;
+  min-height: 100%;
+}
+
+.section-i-right-reverse {
+  width: 70%;
+  min-height: 100%;
+}
+
+.i-reverse img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- Section J -------------------- */
+
+.section-j-left,
+.section-j-center,
+.section-j-right {
+  width: 33.33%;
+}
+
+.section-j-center {
+  display: flex;
+  align-items: center;
+}
+
+.container-j {
+  display: flex;
+  gap: 20px;
+}
+
+.j img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section K -------------------- */
+
+.container-k {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.k img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.section-k-left {
+  width: 33%;
+  min-height: 100%;
+}
+
+.section-k-center {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  gap: 20px;
+}
+
+.section-k-right {
+  width: 33%;
+  min-height: 100%;
+}
+
+/* -------------------- Section L -------------------- */
+
+.container-l {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.l img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-l-left {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  min-height: 100%;
+  gap: 20px;
+}
+
+.section-l-center {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  min-height: 100%;
+  gap: 20px;
+}
+
+.section-l-right {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  min-height: 100%;
+  gap: 20px;
+}
+
+/* -------------------- Section M -------------------- */
+
+.m img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section N -------------------- */
+
+.container-n {
+  height: auto;
+  display: flex;
+
+  gap: 20px;
+}
+
+.section-n-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.section-n-left img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-n-right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-n-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.s-n-r-in {
+  display: flex;
+  gap: 20px;
+}
+
+.s-n-r-in img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.in-right,
+.in-left {
+  width: 50%;
+  height: 98%;
+}
+
+/* -------------------- Section N-reverse -------------------- */
+
+.container-n-reverse {
+  height: auto;
+  display: flex;
+
+  gap: 20px;
+}
+
+.section-n-reverse-left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.container-n-reverse img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-n-reverse-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.s-n-r-in-reverse {
+  display: flex;
+  gap: 20px;
+}
+.s-n-r-in-reverse img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.in-reverse-right,
+.in-reverse-left {
+  width: 50%;
+  height: 98%;
+}
+
+/* -------------------- Section O -------------------- */
+
+.o img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section P -------------------- */
+
+.container-p {
+  display: flex;
+  gap: 20px;
+}
+
+.p img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.section-p-left {
+  width: 70%;
+  display: flex;
+}
+
+.section-p-right {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* -------------------- Section P-reverse -------------------- */
+
+.container-p-reverse {
+  display: flex;
+  gap: 20px;
+}
+
+.p-reverse img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.section-p-reverse-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.section-p-reverse-right {
+  width: 70%;
+  height: auto;
+}
+
+/* -------------------- Section Q -------------------- */
+
+.container-q {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+.container-q p {
+  font-size: 11px;
+  margin: 0;
+}
+
+.section-q-left,
+.section-q-center,
+.section-q-right {
+  display: flex;
+  width: 33.33%;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.q img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* -------------------- Section R -------------------- */
+
+.container-r {
+  display: flex;
+  gap: 20px;
+}
+
+.section-r-left {
+  width: 30%;
+}
+
+.section-r-right {
+  width: 70%;
+}
+
+.section-r-left img,
+.section-r-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------- Section R-reverse -------------------- */
+
+.container-r-reverse {
+  display: flex;
+  gap: 20px;
+}
+
+.section-r-reverse-left img,
+.section-r-reverse-right img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.section-r-reverse-left {
+  width: 70%;
+}
+
+.section-r-reverse-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+/* -------------------- Section S -------------------- */
+
+.container-s {
+  display: flex;
+  gap: 20px;
+}
+
+/* -------------------- Section FIN -------------------- */
+
+.settings p {
+  font-weight: bold;
+}
+
+.settings {
+  display: flex;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.name,
+.first-name,
+.faction {
+  width: 33.3%;
+}
+
+.person {
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.end p {
+  font-size: 10px;
+}
+
+/* ---------------------------------------- */
+
+#video {
+  padding: 10px 20px;
+}
+
+iframe {
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid white;
+}
+
+#jb {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .container-i img,
+  .container-i-reverse img,
+  .container-j img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .section-g1-center {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+  }
+
+  .g1-img {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .g1-img-none {
+    display: none;
+  }
+
+  .section-g2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-g2-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .section-g2-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-g2-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+
+  .section-g2-reverse {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .section-g2-reverse-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .section-g2-reverse-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section-g2-reverse-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+  }
+}

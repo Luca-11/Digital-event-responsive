@@ -1,0 +1,211 @@
+@font-face {
+	font-family: "QelliaRegular";
+	src: url("/fonts/Qellia/Qellia-Regular.otf") format("opentype");
+}
+@font-face {
+	font-family: "QelliaBold";
+	src: url("/fonts/Qellia/Qellia-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: "QelliaLight";
+	src: url("/fonts/Qellia/Qellia-Light.otf") format("opentype");
+}
+@font-face {
+	font-family: "QelliaMedium";
+	src: url("/fonts/Qellia/Qellia-Medium.otf") format("opentype");
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: black;
+	height: 100vh;
+	font-family: "QelliaMedium";
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+#container {
+	display: flex;
+	align-items: center;
+	min-height: 91dvh;
+	max-height: 100dvh;
+	background-color: transparent;
+	border: solid 1px white;
+	border-radius: 0px 40px 0px 40px;
+	margin: 2.5%;
+	overflow-y: hidden;
+}
+#header {
+	background-color: black;
+	width: fit-content;
+	padding: 0px 1%;
+	position: absolute;
+	top: 3%;
+	left: 50%;
+	transform: translate(-50%, 3%);
+}
+
+#header h1 {
+	color: white;
+	margin: 0;
+}
+.modal-content {
+	display: none;
+	flex-direction: column;
+	background-color: black;
+	margin: 0 0 0 3%;
+	width: 37%;
+	height: 75dvh;
+	border: 1px solid white;
+	border-radius: 0px 40px;
+	z-index: 99;
+	overflow-y: hidden;
+}
+.modal-content::-webkit-scrollbar {
+	width: 0;
+}
+.closeModalBtn {
+	display: none;
+}
+embed {
+	height: 100%;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	z-index: 999;
+}
+
+#footer img {
+	height: 10vh;
+}
+#footer img:hover {
+	cursor: pointer;
+}
+
+.main {
+	display: none;
+}
+
+.main p {
+	font-size: 14px;
+	font-family: "Fira Code", monospace;
+}
+
+.main p.description {
+	margin: 8% 0%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+}
+
+.main p.showEmbed {
+	color: white;
+	text-align: right;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.main h2 {
+	margin: 0;
+	font-family: "QelliaRegular";
+	font-size: 24px;
+}
+
+.main .container {
+	padding: 10px 16px 16px;
+	color: white;
+}
+
+.main .banner img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 0 40px 0 0;
+	border-bottom: 1px solid white;
+}
+
+.main .center-line {
+	display: flex;
+	justify-content: center;
+}
+
+.main .line {
+	width: 90%;
+	height: 1px;
+	background-color: white;
+	margin: 20px 0;
+	display: block;
+}
+
+@media (max-width: 768px) {
+	.main {
+		display: block;
+	}
+	canvas {
+		top: -35px !important;
+	}
+	#container {
+		min-height: 92dvh;
+	}
+	#header {
+		top: 0;
+		transform: translate(-50%, 5%);
+	}
+
+	#header h1 {
+		font-size: 28px;
+		text-wrap: nowrap;
+        white-space: nowrap;
+	}
+
+	.modal-content {
+		margin: 30% 0 0 5%;
+		width: 70%;
+		height: 70%;
+	}
+
+	#footer {
+		bottom: 3%;
+	}
+
+	.closeModalBtn {
+		position: absolute;
+		right: 6%;
+		top: 1%;
+		font-weight: bold;
+		font-size: 4rem;
+		color: white;
+	}
+	embed {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	#container {
+		margin: 5.5%;
+	}
+	#header {
+		top: 1%;
+		transform: translate(-50%, 10%);
+	}
+	.modal-content {
+		margin: 65% 0 0 5%;
+	}
+	#footer {
+		bottom: 0;
+	}
+	embed {
+		display: none;
+	}
+}
